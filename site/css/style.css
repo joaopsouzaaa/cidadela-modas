@@ -195,7 +195,6 @@ p { line-height: 1.6; }
   display: flex;
   justify-content: center;
   margin-left: auto;
-  margin-right: -20px;
 }
 
 .hero-carousel {
@@ -322,6 +321,8 @@ p { line-height: 1.6; }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 28px 12px;
+  max-width: 860px;
+  margin: 0 auto;
 }
 
 .beneficio-item {
