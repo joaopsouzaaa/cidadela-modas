@@ -52,6 +52,7 @@ Ainda sem calibração — ver `_memoria/preferencias.md`.
 
 - Identidade visual do cliente atual fica em `identidade/design-guide.md`
 - Gargalo atual é captação de clientes — usar entregas como case/portfólio
+- O site fica publicado via GitHub Pages em https://joaopsouzaaa.github.io/cidadela-modas/ (branch `gh-pages`, espelha a pasta `site/`). Toda mudança em `site/` deve ser sincronizada e enviada pro GitHub automaticamente — commit + push na `main` e atualização da `gh-pages` — sem precisar perguntar antes. O usuário quer o link sempre refletindo a última versão.
 
 ---
 
