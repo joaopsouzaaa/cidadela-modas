@@ -196,18 +196,20 @@ p { line-height: 1.6; }
 
 .hero-badges {
   display: flex;
-  gap: 12px;
+  gap: 8px;
   flex-wrap: wrap;
+  margin-top: 28px;
 }
 
 .hero-badges span {
   background: #fff;
   border: 1px solid rgba(217,119,109,.3);
-  padding: 6px 14px;
+  padding: 5px 11px;
   border-radius: 999px;
-  font-size: .8rem;
+  font-size: .7rem;
   color: var(--coral-dark);
   font-weight: 600;
+  white-space: nowrap;
 }
 
 .hero-media {
