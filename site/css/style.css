@@ -3,6 +3,8 @@
   --coral-dark: #C25F55;
   --magenta: #E6399B;
   --magenta-dark: #C71F81;
+  --rose: #C24C60;
+  --rose-dark: #A83C4E;
   --cream: #FFF8F0;
   --cream-deep: #FDF3E7;
   --ink: #2E2422;
@@ -127,9 +129,9 @@ p { line-height: 1.6; }
 .btn .icon { width: 18px; height: 18px; fill: currentColor; }
 
 .btn-primary {
-  background: var(--magenta);
+  background: var(--rose);
   color: #fff;
-  box-shadow: 0 8px 20px var(--shadow);
+  box-shadow: 0 8px 20px rgba(194, 76, 96, .35);
 }
 
 .btn-outline {
@@ -153,8 +155,30 @@ p { line-height: 1.6; }
 
 /* Hero */
 .hero {
+  position: relative;
   padding: 64px 0 48px;
-  background: linear-gradient(rgba(255, 248, 240, .35), rgba(255, 248, 240, .8));
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: -20px;
+  z-index: -2;
+  background-image: url('../assets/hero-banner.jpg');
+  background-position: right center;
+  background-size: 145%;
+  background-repeat: no-repeat;
+  filter: blur(3px);
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(90deg, var(--cream) 0%, rgba(255, 248, 240, .94) 40%, rgba(255, 248, 240, .68) 65%, rgba(255, 248, 240, .42) 100%);
 }
 
 .hero-inner {
@@ -164,11 +188,11 @@ p { line-height: 1.6; }
   flex-wrap: wrap;
 }
 
-.hero-text { flex: 1 1 420px; }
+.hero-text { flex: 1 1 420px; max-width: 560px; }
 
 .eyebrow {
   display: inline-block;
-  background: var(--magenta);
+  background: var(--rose);
   color: #fff;
   padding: 6px 16px;
   border-radius: 999px;
@@ -212,18 +236,6 @@ p { line-height: 1.6; }
   white-space: nowrap;
 }
 
-.hero-media {
-  flex: 1 1 280px;
-  display: flex;
-  justify-content: center;
-}
-
-.hero-logo {
-  width: min(460px, 90vw);
-  height: auto;
-  border-radius: 24px;
-  box-shadow: 0 20px 50px var(--shadow);
-}
 
 /* Benefícios */
 .beneficios {
@@ -589,6 +601,9 @@ p { line-height: 1.6; }
   .nav { display: none; }
   .nav-toggle { display: block; }
   .header-cta { display: none; }
+
+  .hero::before { display: none; }
+  .hero::after { background: var(--cream); }
 
   .nav.open {
     display: flex;
