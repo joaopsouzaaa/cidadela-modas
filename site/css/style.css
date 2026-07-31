@@ -676,8 +676,13 @@ p { line-height: 1.6; }
   .nav-toggle { display: block; }
   .header-cta { display: none; }
 
-  .hero::before { display: none; }
-  .hero::after { background: var(--cream); }
+  .hero::before {
+    background-position: center 25%;
+    background-size: 220%;
+  }
+  .hero::after {
+    background: linear-gradient(180deg, var(--cream) 0%, rgba(255, 248, 240, .92) 45%, rgba(255, 248, 240, .92) 100%);
+  }
 
   .nav.open {
     display: flex;
