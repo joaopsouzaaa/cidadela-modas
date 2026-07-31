@@ -166,18 +166,11 @@ p { line-height: 1.6; }
   position: absolute;
   inset: 0;
   z-index: -2;
+  background-color: #969696;
   background-image: url('../assets/hero-banner-2.jpg');
-  background-position: right center;
-  background-size: cover;
+  background-position: center center;
+  background-size: contain;
   background-repeat: no-repeat;
-}
-
-.hero::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(90deg, var(--cream) 0%, rgba(255, 248, 240, .85) 32%, rgba(255, 248, 240, .35) 58%, rgba(255, 248, 240, .05) 100%);
 }
 
 .hero-inner {
@@ -674,16 +667,6 @@ p { line-height: 1.6; }
   .nav { display: none; }
   .nav-toggle { display: block; }
   .header-cta { display: none; }
-
-  .hero::before {
-    inset: -20px;
-    background-position: center 25%;
-    background-size: 220%;
-    filter: blur(3px);
-  }
-  .hero::after {
-    background: linear-gradient(180deg, var(--cream) 0%, rgba(255, 248, 240, .92) 45%, rgba(255, 248, 240, .92) 100%);
-  }
 
   .nav.open {
     display: flex;
