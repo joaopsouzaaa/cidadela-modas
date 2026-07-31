@@ -1,11 +1,57 @@
-# MazyOS — Sistema operacional do negócio
+# João — MazyOS
 
-Sua empresa roda em cima desse arquivo. Aqui ficam as regras de operação
-do MazyOS — como o Claude lê o contexto, aprende com correções, mantém
-tudo atualizado e cria skills novas conforme a operação evolui.
+Operação freelancer de marketing digital e implementação de IA. Aqui
+ficam as regras de operação do MazyOS — como o Claude lê o contexto,
+aprende com correções, mantém tudo atualizado e cria skills novas
+conforme a operação evolui.
 
-Esse arquivo é editável. Quando o `/instalar` rodar, ele complementa o
-final dessa página com as regras específicas do seu negócio.
+## O que é esse workspace
+
+Operação freelancer solo. Essa pasta está dedicada ao projeto ativo:
+o site da **Cidadela Modas** (cliente).
+
+**Estrutura de pastas:**
+- `_memoria/` — quem é o João, como fala, foco atual
+- `identidade/` — identidade visual do cliente atual (Cidadela Modas)
+- `marketing/` — conteúdo do cliente (Insta, carrosséis, campanhas)
+- `saidas/` — entregas, documentos pontuais
+- `dados/` — arquivos a analisar
+- `templates/` — templates de skills e perfis do MazyOS
+
+## Quem sou
+
+Sou o João, freelancer de marketing digital e implementação de IA.
+Trabalho com pequenos negócios que têm dificuldade de colocar a empresa
+na internet, entregando sites, redes sociais e tráfego pago.
+
+## Meu serviço
+
+- Criação de sites
+- Gestão de redes sociais (carrosséis, posts)
+- Tráfego pago
+- Implementação de IA em processos de pequenos negócios
+
+Capacidade simultânea: sozinho, um cliente por vez por enquanto.
+
+## Cliente ativo
+
+**Cidadela Modas** — loja de roupas. Aguardando do cliente: logo,
+descrição da empresa, paleta de cores, WhatsApp, Instagram, link da
+loja na Shopee e link do perfil do TikTok (lives diárias).
+
+## Como trabalho
+
+Recebe o briefing do cliente, entrega sites/carrosséis/campanhas.
+Processo ainda sendo definido — atualizar conforme rotina se firmar.
+
+## Tom de voz
+
+Ainda sem calibração — ver `_memoria/preferencias.md`.
+
+## Regras do sistema
+
+- Identidade visual do cliente atual fica em `identidade/design-guide.md`
+- Gargalo atual é captação de clientes — usar entregas como case/portfólio
 
 ---
 
