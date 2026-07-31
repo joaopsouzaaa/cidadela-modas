@@ -164,13 +164,13 @@ p { line-height: 1.6; }
 .hero::before {
   content: '';
   position: absolute;
-  inset: 0;
+  inset: -20px;
   z-index: -2;
-  background-color: #969696;
-  background-image: url('../assets/hero-banner-2.jpg');
+  background-image: url('../assets/hero-banner.jpg');
   background-position: right center;
-  background-size: cover;
+  background-size: 145%;
   background-repeat: no-repeat;
+  filter: blur(3px);
 }
 
 .hero::after {
@@ -178,7 +178,7 @@ p { line-height: 1.6; }
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(90deg, var(--cream) 0%, rgba(255, 248, 240, .88) 30%, rgba(255, 248, 240, .5) 55%, rgba(255, 248, 240, .15) 85%);
+  background: linear-gradient(90deg, var(--cream) 0%, rgba(255, 248, 240, .94) 40%, rgba(255, 248, 240, .68) 65%, rgba(255, 248, 240, .42) 100%);
 }
 
 .hero-inner {
@@ -191,9 +191,10 @@ p { line-height: 1.6; }
 .hero-text { flex: 1 1 420px; max-width: 560px; }
 
 .hero-media {
-  flex: 1 1 280px;
+  flex: 0 1 300px;
   display: flex;
   justify-content: center;
+  margin-left: auto;
 }
 
 .hero-carousel {
@@ -676,9 +677,12 @@ p { line-height: 1.6; }
   .nav-toggle { display: block; }
   .header-cta { display: none; }
 
-  .hero::before { background-position: center 15%; }
+  .hero::before {
+    background-position: center 25%;
+    background-size: 220%;
+  }
   .hero::after {
-    background: linear-gradient(180deg, var(--cream) 0%, rgba(255, 248, 240, .85) 55%, rgba(255, 248, 240, .85) 100%);
+    background: linear-gradient(180deg, var(--cream) 0%, rgba(255, 248, 240, .92) 45%, rgba(255, 248, 240, .92) 100%);
   }
 
   .nav.open {
